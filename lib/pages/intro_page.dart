@@ -14,7 +14,10 @@ class IntroPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             // gif
-            const Icon(Icons.shop, size: 120,),
+            const Icon(
+              Icons.shop,
+              size: 120,
+            ),
             // minimal shop text
             const Text(
               "MINIMAL SHOP",
@@ -32,7 +35,10 @@ class IntroPage extends StatelessWidget {
             ),
 
             // button
-            MyButton(onTap: () => null, child: const Icon(Icons.arrow_forward),),
+            MyButton(
+              onTap: () => Navigator.pushNamed(context, '/shop_page'),
+              child: const Icon(Icons.arrow_forward),
+            ),
           ],
         ),
       ),
